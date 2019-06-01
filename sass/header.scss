@@ -1,0 +1,36 @@
+.header {
+  background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/unsplash-1634280-unsplash.jpg);
+  background-size: cover;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  grid-column: 1 / -1;
+  padding: 12rem;
+  padding-top: 15rem;
+  text-align: center;
+
+  display: grid;
+  //grid-template-columns: min-content max-content;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  justify-content: center;
+  grid-row-gap: 8rem;
+
+  &__btn {
+    align-self: start;
+    justify-self: start;
+    justify-self: center;
+
+    transition: all .3s;
+
+    &::before {
+      background-color: transparent;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $color-primary-dark;
+    }
+  }
+}
