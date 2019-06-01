@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(4, min-content);
+  grid-template-columns: repeat(8, minmax(min-content, 15rem)) minmax(min-content, 1fr); }
+
+.header-1 {
+  text-transform: uppercase;
+  font-size: 6rem;
+  letter-spacing: .5rem; }
+
+.header-2 {
+  font-size: 5rem;
+  font-weight: 100; }
+
+.header {
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/unsplash-1634280-unsplash.jpg);
+  background-size: cover;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  grid-column: 1 / -1;
+  padding: 12rem;
+  padding-top: 15rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  justify-content: center;
+  grid-row-gap: 8rem; }
+  .header__btn {
+    align-self: start;
+    justify-self: start;
+    justify-self: center;
+    transition: all .3s; }
+    .header__btn::before {
+      background-color: transparent;
+      color: #fff; }
+    .header__btn:hover {
+      background-color: #fff;
+      color: #B28451; }
+
+.btn {
+  border: 1px solid;
+  border-radius: 2%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 9rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent; }
