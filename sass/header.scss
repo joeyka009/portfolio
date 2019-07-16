@@ -1,5 +1,5 @@
 .header {
-  background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/unsplash-1634280-unsplash.jpg);
+  background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/main.jpg);
   background-size: cover;
   height: 85vh;
   background-repeat: no-repeat;
@@ -31,6 +31,26 @@
     &:hover {
       background-color: #fff;
       color: $color-primary-dark;
+    }
+  }
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+
+    &--links {
+      font-size: 1.5rem;
+      list-style: none;
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-around;
+      align-items: flex-end;
+      font-weight: 600;
+      
     }
   }
 }

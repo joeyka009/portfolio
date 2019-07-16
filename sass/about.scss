@@ -1,3 +1,37 @@
 .about {
+  padding: 2rem;
+  grid-column: 1 / -1;
+  background-color: $color-grey-light-1;
+  color: black;
+  padding: 12rem 0;
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-row-gap: 3rem;
   
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 5rem;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    //padding: 0 15rem;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+
+  &__text {
+    font-size: 3rem; 
+    width: 70%;
+    margin: 0 auto;
+  }
 }
