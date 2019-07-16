@@ -17,19 +17,37 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh repeat(4, min-content);
-  grid-template-columns: repeat(8, minmax(min-content, 15rem)) minmax(min-content, 1fr); }
+  grid-template-columns: repeat(12, minmax(min-content, 15rem)) minmax(min-content, 1fr); }
 
-.header-1 {
-  text-transform: uppercase;
-  font-size: 6rem;
-  letter-spacing: .5rem; }
-
-.header-2 {
-  font-size: 5rem;
-  font-weight: 100; }
+.about {
+  padding: 2rem;
+  grid-column: 1 / -1;
+  background-color: #f9f7f6;
+  color: black;
+  padding: 12rem 0;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-row-gap: 3rem; }
+  .about__header {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 5rem;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto; }
+    .about__header::before, .about__header::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
+  .about__text {
+    font-size: 3rem;
+    width: 70%;
+    margin: 0 auto; }
 
 .header {
-  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/unsplash-1634280-unsplash.jpg);
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/main.jpg);
   background-size: cover;
   height: 85vh;
   background-repeat: no-repeat;
@@ -54,14 +72,46 @@ body {
     .header__btn:hover {
       background-color: #fff;
       color: #B28451; }
+  .header__text {
+    width: 80%;
+    margin: 0 auto; }
+  .header__nav {
+    text-transform: uppercase; }
+    .header__nav--links {
+      font-size: 1.5rem;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+      font-weight: 600; }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff; }
 
 .btn {
   border: 1px solid;
   border-radius: 2%;
-  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1.8rem 9rem;
   cursor: pointer;
   color: #fff;
   background-color: transparent; }
+
+.header-1 {
+  text-transform: uppercase;
+  font-size: 7.5rem;
+  letter-spacing: .5rem; }
+
+.header-2 {
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .5rem; }
+
+.header-3 {
+  font-size: 4rem;
+  font-weight: 100; }
